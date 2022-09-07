@@ -1,0 +1,59 @@
+---
+import ContentSection from "~/components/content-section.astro";
+import { Icon } from "astro-icon";
+
+const features = [
+  {
+    title: "Sovereignty",
+    description:
+      "RaspiBlitz will do the heavy lifting for you to set up your Bitcoin full node and Lightning node. You will own your data.",
+    icon: "carbon:data-base",
+  },
+  {
+    title: "Low cost",
+    description:
+      "RaspiBlitz is a first-class Raspberry Pi citizen. That offers you to run a node with minimal investment in the setup and maintenance phase.",
+    icon: "carbon:currency-dollar",
+  },
+  {
+    title: "Monitoring",
+    description:
+      "With the possibility to run RaspiBlitz with a display, you have all the important node metrics in sight.",
+    icon: "carbon:cloud-monitoring",
+  },
+  {
+    title: "WebUI",
+    description:
+      "With our new WebUI, it's easier than ever to set up and maintain your node. If you love the terminal, we covered you as well.",
+    icon: "carbon:application-web",
+  },
+  {
+    title: "Broad Integration",
+    description:
+      "RaspiBlitz supports many apps and services which are easy to enable.",
+    icon: "carbon:integration",
+  },
+  {
+    title: "Community",
+    description:
+      "RaspiBlitz is an open-source project powered by hundreds of contributors making thousands of individual contributions.",
+    icon: "carbon:airline-passenger-care",
+  },
+];
+---
+
+<ContentSection title="Features" id="features">
+  <ul class="grid max-w-6xl grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    {
+      features.map(({ title, description, icon }) => (
+        <li class="flex flex-col items-center gap-4 p-6 grid-tile">
+          <div class="w-16 h-16 p-3 border-2 border-current rounded-full">
+            <Icon name={icon} />
+          </div>
+          <p class="text-xl font-extrabold text-center">{title}</p>
+          <p class="text-sm text-center text-offset">{description}</p>
+        </li>
+      ))
+    }
+  </ul>
+</ContentSection>

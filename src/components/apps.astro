@@ -1,0 +1,44 @@
+---
+import ContentSection from "~/components/content-section.astro";
+import AppList from "~/components/app-list.astro";
+
+const apps = [
+  {
+    title: "Tor",
+    icon: "cib:tor",
+    url: "https://www.torproject.org/",
+  },
+  {
+    title: "BTCPay Server",
+    icon: "frameworks/btcpay",
+    url: "https://github.com/btcpayserver",
+  },
+  {
+    title: "Mempool",
+    icon: "frameworks/mempool",
+    url: "https://mempool.space/",
+  },
+  {
+    title: "Jam",
+    icon: "frameworks/jam",
+    url: "https://github.com/joinmarket-webui/jam",
+  },
+  {
+    title: "LNBits",
+    icon: "frameworks/lnbits",
+    url: "https://lnbits.com/",
+  },
+];
+---
+
+<ContentSection title="Supported apps" id="apps">
+  <Fragment slot="lead">
+    RaspiBlitz <span class="text-primary">plays nice</span>. It supports many different apps and services. 
+    From Tor to Sphinx Relay. It's easy to switch your favorite apps on.
+  </Fragment>
+  <AppList
+    title="Supported apps"
+    data={apps}
+    url="https://github.com/rootzoll/raspiblitz#feature-overview"
+  />
+</ContentSection>

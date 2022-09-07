@@ -1,0 +1,19 @@
+---
+import { Icon } from "astro-icon";
+import ContentSection from "~/components/content-section.astro";
+---
+
+<ContentSection title="Your financial sovereignty starts here" id="intro">
+  <Fragment slot="lead">
+    RaspiBlitz is a do-it-yourself <span class="text-primary">Lightning node</span> running together with a <span class="text-primary">Bitcoin full node</span> on a Raspberry Pi and a <span class="text-primary">nice display</span> for easy set up & monitoring.
+  </Fragment>
+  <div class="grid grid-cols-1sm:grid-cols-1">
+    <a
+      href="https://github.com/rootzoll/raspiblitz/releases"
+      class="flex items-center justify-center gap-3 px-6 py-4 cta text-white focus:outline-none"
+    >
+      <Icon pack="carbon" name="rocket" class="h-8" />
+      <span>Get the latest version</span>
+    </a>
+  </div>
+</ContentSection>

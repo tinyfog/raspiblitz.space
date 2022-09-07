@@ -1,0 +1,33 @@
+@import "global.css";
+@import "theme.css";
+
+/* Tiles custom styling */
+
+.grid-tile:nth-child(1),
+.grid-tile:nth-child(2),
+.grid-tile:nth-child(3) {
+  border-bottom: 2px dashed var(--color-border);
+}
+
+.grid-tile:nth-child(7),
+.grid-tile:nth-child(8),
+.grid-tile:nth-child(9) {
+  border-top: 2px dashed var(--color-border);
+}
+
+.grid-tile:nth-child(1),
+.grid-tile:nth-child(4),
+.grid-tile:nth-child(7) {
+  border-right: 2px dashed var(--color-border);
+}
+
+.grid-tile:nth-child(3),
+.grid-tile:nth-child(6),
+.grid-tile:nth-child(9) {
+  border-left: 2px dashed var(--color-border);
+}
+
+.cta {
+  background-color: var(--color-error);
+  color: white;
+}
