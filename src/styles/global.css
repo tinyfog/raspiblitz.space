@@ -1,6 +1,6 @@
 /* TODO: consider creating <Button> and <GradientText> components */
 a,
-.btn {
+button {
   @apply transition-colors duration-200;
   @apply hover:text-secondary;
   @apply focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-transparent focus:ring-secondary;
@@ -9,4 +9,14 @@ a,
 .gradient-text {
   @apply text-transparent bg-clip-text;
   @apply bg-gradient-to-br from-indigo-500 via-fuchsia-500 to-pink-500;
+}
+
+a {
+  @apply underline;
+  @apply hover:no-underline;
+}
+
+svg {
+  @apply hover:outline-none;
+  @apply focus:outline-none;
 }
