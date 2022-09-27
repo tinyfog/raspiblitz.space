@@ -10,7 +10,7 @@ npm install
 npm run build
 ```
 
-You then find the compiled page in: `dist` folder.
+You then find the compiled page in: `docs` folder. This folder is needed so that the resulting page can be hosted by github-pages.
 
 For further dev info see Astro framework docs page:
 https://astro.build/
