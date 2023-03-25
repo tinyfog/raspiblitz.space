@@ -1,21 +1,21 @@
 [data-theme="light"] {
-  --color-primary: #4263EB;
-  --color-secondary: #96C1FF;
-  --color-text: #161616;
-  --color-text-offset: #262626;
-  --color-background: #f4f4f4;
-  --color-background-offset: #FFFFFF;
-  --color-border: #FFC02E;
-  --color-error: #DC3545;
+  --color-primary: theme("colors.white");
+  --color-secondary: theme("colors.gray.400");
+  --color-text: theme("colors.gray.300");
+  --color-text-offset: theme("colors.gray.400");
+  --color-background: theme("colors.gray.800");
+  --color-background-offset: theme("colors.gray.700");
+  --color-border: theme("colors.yellow.500");
+  --color-error: theme("colors.yellow.500");
 }
 
 [data-theme="dark"] {
-  --color-primary: #96C1FF;
-  --color-secondary: theme("colors.indigo.400");
-  --color-text: theme("colors.gray.400");
+  --color-primary: theme("colors.white");
+  --color-secondary: theme("colors.gray.400");
+  --color-text: theme("colors.gray.300");
   --color-text-offset: theme("colors.gray.400");
-  --color-background: #0B30C6;
-  --color-background-offset: theme("colors.gray.800");
-  --color-border: #FFC02E;
-  --color-error: #DC3545;
+  --color-background: theme("colors.gray.800");
+  --color-background-offset: theme("colors.gray.700");
+  --color-border: theme("colors.yellow.500");
+  --color-error: theme("colors.yellow.500");
 }
