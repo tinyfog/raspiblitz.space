@@ -116,12 +116,15 @@ const navItems = [
   .fixed-header {
     @apply fixed top-0 bottom-auto;
     @apply text-default bg-default border-default;
+    padding-left: 1.2rem !important;
+    padding-right: 1.2rem !important;
   }
   .modal.is-open {
     @apply block;
   }
 
-  .fixed-header .h-10 {
+  .fixed-header svg {
     fill: var(--color-secondary);
+    max-width: 166px;
   }
 </style>
